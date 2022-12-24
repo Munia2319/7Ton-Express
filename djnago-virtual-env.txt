@@ -1,0 +1,38 @@
+scp -r C:\Users\asus\Desktop\courier munia@courier.etaka.online:/home/munia/
+
+cd into your directory
+
+sudo pip3 install virtualenv
+
+virtualenv newenv
+
+To install packages into the isolated environment, you must activate it by typing:
+
+source newenv/bin/activate
+
+now install here with
+
+pip install django
+
+You can verify the installation by typing:
+
+django-admin --version
+
+To leave your virtual environment, you need to issue the deactivate command from anywhere on the system:
+
+deactivate
+Sadik says:source newenv/bin/activate
+python manage.py runserver 0.0.0.0:8000
+
+
+server-password:fv8s0l52d6
+
+scp -r C:\Users\asus\Desktop\backup\courier\courier/settings.py munia@courier.etaka.online:/home/munia/backup
+20.121.48.68-filezila, port-22
+ProxyPass /delivery http://127.0.0.1:8000
+ProxyPassReverse /delivery http://127.0.0.1:8000
+nano /etc/apache2/sites-enabled/000-default-le-ssl.conf
+for stoping apache=systemctl stop apache2.service
+systemctl start apache2.service
+
+python manage.py runsslserver --certificate /etc/letsencrypt/live/courier.etaka.online/cert.pem --key /etc/letsencrypt/live/courier.etaka.online/privkey.pem 0.0.0.0:443
