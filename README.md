@@ -5,7 +5,15 @@
 
 **Live website:** [7tonexpress.com](https://7tonexpress.com/)
 
-7Ton Express is a courier booking website that helps customers submit shipment details, estimate delivery charges, create orders, and proceed to payment. I contributed to the **backend**, working on the Django booking and order workflow.
+7Ton Express is a courier booking website that helps customers submit shipment details, estimate delivery charges, create orders, and proceed to payment. I contributed to the **backend**, working on shipment management, payment status, delivery tracking, pricing calculations, and Django model and view implementation.
+
+## Problem
+
+Customers needed a simple, centralized way to calculate courier costs, place shipments, complete payments, and track order progress without relying on manual booking and follow-up processes.
+
+## Main Feature
+
+Multi-step shipment booking that collects sender and recipient details, calculates delivery charges using configured rates and surcharges, creates an order, and hands it off for payment.
 
 ## Features
 
